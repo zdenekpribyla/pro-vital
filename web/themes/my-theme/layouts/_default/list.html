@@ -1,0 +1,22 @@
+{{ partial "head" . }}
+
+{{ partial "header" . }}
+
+{{ if eq .Params.myLayout "pronajem" }}
+{{ partial "pronajem" . }}
+
+{{ else if eq .Params.myLayout "servis" }}
+{{ partial "servis" . }}
+
+{{ else if eq .Params.myLayout "prodej" }}
+{{ partial "prodej" . }}
+
+{{ else if eq .Params.myLayout "kontakt" }}
+{{ partial "kontakt" . }}
+
+{{ else }}
+{{ partial "mainHP" . }}
+
+{{ end }}
+
+{{ partial "footer" . }}

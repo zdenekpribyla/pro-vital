@@ -1,0 +1,52 @@
+﻿<section id="kontakty" style="color: #cdcdcd; background: #1c1c1c">
+	<div class="container" style="padding-top: 20px; padding-bottom: 20px">
+		<div class="row">
+			<div class="col-md-6 col-xs-12 px-4">
+
+				<h4 class="kontakt__title">O nás</h4>
+				<div class="row">
+					<div class="col-md-6">
+						<blockquote class="blockquote" style="font-size: 16px">
+							<p class="mb-0">Půjčováním dýchacích přístrojů se zabýváme přes {{ $year := dateFormat "2006" now }} {{ sub ( int $year ) 1995 }} let. Za tu dobu jsme instalovali přístroj více než 1500 zákazníkům z celé České republiky.</p>
+							<footer class="blockquote-footer">Ing. Zdeněk Pavlas, <cite title="Source Title">jednatel společnosti</cite></footer>
+						</blockquote>
+					</div>
+					<div class="col-md-6">
+						<img src="/images/zdenek-pavlas-provital.jpg" class="img-fluid">
+					</div>
+				</div>
+				<!--<img src="/images/zdenek-pavlas-provital.jpg" style="width: 77%; max-width:250px; margin-top: 25px;">-->
+				<ul class="kontakt__texty">
+					<li>1500+ zákazníků využilo naše služby. Stovky prodejů a pronájmů</li>
+					<li>1 000 000 km jsme najezdili za našimi klienty. Pronajaté přístroje instalujeme po celé ČR.</li>
+					<li>Máme bohaté zkušenosti. Služby s dýchacími přístroji poskytujeme od roku 1995.</li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-xs-12 px-4">
+				<h4 class="kontakt__title">Kontakty</h4>
+				<ul class="list-style-type kontakt__texty" style="padding: 0; margin: 0">
+					<li class="kontakt__li"><i class="fas fa-phone kontakt__icon"></i>603 203 098 Po-Pá 8-18h</li>
+					<li class="kontakt__li"><i class="fas fa-at kontakt__icon"></i>{{ partial "email" . }}</li>
+					<li class="kontakt__li"><div style="display: inline-block"><i class="fas fa-map-marker-alt kontakt__icon" style="padding-right: 20px"></i></div><div style="display: inline-block; vertical-align: middle">2.května 944<br>Studénka 74213</div></li>
+				</ul>
+			</div>
+			<div class="col-md-3 col-xs-12 px-4">
+				<h4 class="kontakt__title">Fakturační údaje</h4>
+				<ul class="list-style-type kontakt__texty" style="padding: 0; margin: 0">
+					<li class="kontakt__li">Ing. Zdeněk Pavlas</li>
+					<li>Pro-vital fve, s.r.o.</li>
+					<li>2.května 944, Studénka 74213</li>
+					<li>IČ: 28598296 DIČ: CZ28598296</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section id="created" style="color: #cdcdcd; background: #222222">
+	<div style="padding: 15px 0; text-align: center; color: #868686; font-size: 14px">Gladly created by <a href="https://pribyla.com" style="color: #cdcdcd">pribyla.com</a> | © 1995 - {{ dateFormat "2006" now }} <a href="https://pro-vital.cz" style="color: #cdcdcd">Pro-vital.cz</a></div>
+</section>
+
+</body>
+</html>

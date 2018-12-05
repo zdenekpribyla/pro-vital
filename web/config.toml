@@ -1,0 +1,4 @@
+baseURL = "https://pro-vital-acdd6.firebaseapp.com/"
+canonifyURLs = true
+languageCode = "cs"
+theme = "my-theme"
